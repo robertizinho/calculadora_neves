@@ -41,7 +41,8 @@
  }
 
  .conta label,
- .gorjeta label {
+ .gorjeta label,
+ .pessoas label {
     color: var(--green-500);
     font-weight: 700;
 
@@ -69,8 +70,9 @@
  }
 
 
- 
-.conta input::placeholder {
+
+ .conta input::placeholder,
+ .pessoas input::placeholder {
     color: var(--green-300);
 }
 
@@ -113,4 +115,8 @@
 
 .gorjeta #outra::placeholder {
     color: var(--green-300);
+}
+
+.gorjeta #erro {
+    display: none;
 }
