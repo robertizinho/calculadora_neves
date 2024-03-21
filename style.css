@@ -15,7 +15,8 @@
     --green-700: #3d6666;
     --green-800: #004748;
     --light-green: #26c2ae;
-    --white: #ffffff;
+    --white:       #ffffff;
+    --green-hover: #9fe8df;
  }
 
  body {
@@ -79,8 +80,14 @@
     color: var(--green-300);
 }
 
-.conta:has(input:focus) {
+.conta:has(input:focus) div,
+.conta:has(input:hover) div,
+.pessoas:has(input:focus) div,
+.pessoas:has(input:hover) div,
+.gorjeta #outra:focus,
+.gorjeta #outra:hover {
     outline: 2px solid var(--light-green);
+    cursor: pointer;
 }
 
 
@@ -106,6 +113,15 @@
     background-color: var(--green-800);
     color: var(--white);
 }
+
+.gorjeta input[type="button"]:hover,
+.resultados button:hover {
+    background-color: var(--green-hover);
+    cursor: pointer;
+}
+
+
+
 
 .gorjeta #outra {
    width: 100%;
@@ -174,6 +190,12 @@
     padding-block: 0.5rem ;
 }
 
+.conta input::-webkit-inner-spin-button,
+.pessoas input::-webkit-inner-spin-button,
+.gorjeta #outra::-webkit-inner-spin-button {
+    display: none;
+}
+
 
 @media( min-width:920px) {
      body{
@@ -202,10 +224,7 @@
         width: 100%;
     }
 
-    .conta input::-webkit-inner-spin-button,
-    .pessoas input::-webkit-inner-spin-button {
-        display: none;
-    }
+   
 
     .gorjeta div {
         grid-template-columns:1fr 1fr 1fr ;
@@ -236,5 +255,5 @@
 
 
 
-    
+
     }
