@@ -14,9 +14,10 @@
     --green-600: #547878;
     --green-700: #3d6666;
     --green-800: #004748;
-    --light-green: #26c2ae;
-    --white:       #ffffff;
-    --green-hover: #9fe8df;
+    --light-green:#26c2ae;
+    --white:     #ffffff;
+    --green-hover:#9fe8df;
+    --danger:    #e17457;
  }
 
  body {
@@ -52,7 +53,8 @@
 
  }
 
- .conta div {
+ .conta div,
+ .pessoas .input-box {
   margin-top: 0.4rem;
   background-color: var(--green-100);
   padding: 0.4rem 1.2rem;
@@ -82,8 +84,8 @@
 
 .conta:has(input:focus) div,
 .conta:has(input:hover) div,
-.pessoas:has(input:focus) div,
-.pessoas:has(input:hover) div,
+.pessoas:has(input:focus) .input-box,
+.pessoas:has(input:hover) .input-box,
 .gorjeta #outra:focus,
 .gorjeta #outra:hover {
     outline: 2px solid var(--light-green);
@@ -133,9 +135,25 @@
     color: var(--green-300);
 }
 
-.gorjeta #erro {
-    display: none;
+.pessoas #erro-div {
+    outline: 2px  solid var(--danger);
 }
+
+.pessoas .textos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pessoas #erro {
+     font-size: 0.75rem;
+     color: var(--danger);
+     display: none;
+
+     font-weight: 700;
+    }
+     
+
 
 .resultados {
     background-color: var(--green-800);
