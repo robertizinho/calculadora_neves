@@ -64,7 +64,8 @@
   border-radius: 0.3125rem;
  }
 
- .conta input {
+ .conta input,
+ .pessoas input {
     border: none;
     text-align: right;
     width: 100%;
