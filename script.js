@@ -13,9 +13,19 @@ const pessoasInput = document.querySelector("#pessoas")
 pessoasInput.addEventListener("input",receberQuantidadePessoas)
 
 function receberQuantidadePessoas(evento) {
-    if (evento.target.value === "0") {
+       
        const paragrafoerro = document.querySelector(".pessoas #erro")
+       const DIVerro = document.querySelector(".pessoas .input-box")
+       
+      if (evento.target.value === "0") {
        paragrafoerro.style.display = "block"
-    }
+       DIVerro.setAttribute("id","erro-div")    
+      
+      
+      }  else {
+         paragrafoerro.style.display = "none"
+         DIVerro.setAttribute("id","")
+         pessoas = Number(evento.target.value)
+      }
 
 }
