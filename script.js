@@ -93,4 +93,9 @@ document.querySelector(".gorjeta-total > strong").innerHTML = "R$0.00"
 document.querySelector(".total > strong").innerHTML = "R$0.00"
 
 
+conta = 0
+Porcentagem = 0
+pessoas = 0 
+
+
 }
