@@ -84,9 +84,9 @@ function Limpar() {
       botao.classList.remove("botao-ativo")
    })
 
-gorjetaInput= ""
+gorjetaInput.value= ""
 
-pessoasInput= ""
+pessoasInput.value= ""
 
 
 document.querySelector(".gorjeta-total > strong").innerHTML = "R$0.00"
